@@ -1,0 +1,89 @@
+[
+    {
+        "display_name": "Home",
+        "route": "/",
+        "icon": "bx bxs-home"
+    },
+    {
+        "display_name": "Sermon",
+        "route": "/sermon",
+        "icon": "bx bx-bible"
+    },
+    {
+        "display_name": "Bulletin",
+        "route": "/bulletin",
+        "icon": "bx bx-book"
+    },
+    {
+        "display_name": "Podcast",
+        "route": "/podcast",
+        "icon": "bx bx-tv"
+    },
+    {
+        "display_name": "Giving",
+        "route": "/giving",
+        "icon": "bx bx-heart"
+    },
+    {
+        "display_name": "Events",
+        "route": "/event",
+        "icon": "bx bx-calendar-event"
+    },
+    {
+        "display_name": "New Member",
+        "route": "/new-member",
+        "icon": "bx bx-user-plus"
+    },
+    {
+        "display_name": "Home Cell",
+        "route": "/home-cell",
+        "icon": "bx bx-home-heart"
+    },
+    {
+        "display_name": "Teenage Church",
+        "route": "/teenage-church",
+        "icon": "bx bxs-group"
+    },
+    {
+        "display_name": "Children Church",
+        "route": "/children-church",
+        "icon": "bx bx-group"
+    },
+    {
+        "display_name": "About Us",
+        "route": "/about-us",
+        "icon": "bx bx-help-circle"
+    },
+    {
+        "display_name": "Join Us Live",
+        "route": "/join-us-live",
+        "icon": "bx bx-video-plus"
+    },
+    {
+        "display_name": "Annoucement",
+        "route": "/announcement",
+        "icon": "bx bx-volume-low"
+    },
+    {
+        "display_name": "Find My Church",
+        "route": "/find-my-church",
+        "icon": "bx bx-search-alt-2"
+    },
+    {
+        "display_name": "Prayer Request",
+        "route": "/prayer-request",
+        "icon": "bx bx-book-open"
+    },
+    {
+        "display_name": "Discover your Faith",
+        "route": "/discover-your-faith",
+        "icon": "bx bx-search-alt"
+    },
+    {
+        "display_name": "Service Countdown",
+        "route": "/service-countdown",
+        "icon": "bx bx-stopwatch"
+    }
+]
+
+

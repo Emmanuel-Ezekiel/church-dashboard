@@ -1,0 +1,919 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --main-bg: #ffffff;
+    --second-bg: #fafafb;
+    --txt-color: #455560;
+    --txt-white: #fff;
+    --main-color: #349eff;
+    --second-color: #62b4ff;
+    --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    --main-bg-light: #ffffff;
+    --second-bg-light: #fafafb;
+    --txt-color-light: #455560;
+    --box-shadow-light: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    --main-bg-dark: #2d2d2d;
+    --second-bg-dark: #202020;
+    --txt-color-dark: #bbbbbb;
+    --box-shadow-dark: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+
+    --main-color-blue: #349eff;
+    --second-color-blue: #62b4ff;
+
+    --main-color-red: #fb0b12;
+    --second-color-red: #ff4a6b;
+
+    --main-color-cyan: #10d4d2;
+    --second-color-cyan: #2ae9e6;
+
+    --main-color-green: #019707;
+    --second-color-green: #4caf50;
+
+    --main-color-orange: #d68102;
+    --second-color-orange: #fca11a;
+
+    --sidebar-width: 300px;
+    --border-radius: 15px;
+    --topnav-height: 110px;
+    --transition-cubic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.7px;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+a:hover {
+    color: var(--main-color);
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    color: var(--txt-color);
+}
+
+ul {
+    list-style-type: none;
+}
+
+input {
+    border: 2px solid transparent;
+    outline: 0;
+}
+
+input:focus {
+    border: 2px solid var(--main-color);
+}
+
+
+
+/* HOME */
+.page-header {
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.card {
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color: var(--main-bg);
+    box-shadow: var(--box-shadow);
+    border-radius: 4px;
+}
+
+.card-chart{
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color: var(--main-bg);
+    box-shadow: var(--box-shadow);
+    border-radius: 4px;
+    height: 300px;
+}
+
+.card-ins {
+    margin-bottom: 30px;
+    background-color: var(--main-bg);
+    box-shadow: var(--box-shadow);
+    border-radius: 4px;
+}
+
+.card__instruction {
+    display: flex;
+}
+
+.instruction {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.instruction img {
+    margin: auto auto;
+    width: 270px;
+    height: 270px;
+} 
+
+.instruction i {
+    position: absolute;
+    top: 90px;
+    left: 190px;
+    font-size: 130px;
+    color: white;
+    cursor: pointer;
+    font-size: 100px;
+}
+
+.card__sermon {
+    display: flex;
+}
+
+
+.full-height {
+    height: 100%;
+}
+
+.card.full-height {
+    height: calc(100% - 30px);
+}
+
+.card__name {
+    font-size: 25px;
+    letter-spacing: 0.7px;
+    font-weight: normal;
+    font-family: ' Montserrat';
+    line-height: 18px;
+
+}
+
+.card__header {
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__header h3 {
+    font-weight: normal;
+    font-size: 12px;
+}
+.card__header p {
+   font-weight: 500;
+   font-size: 15px;
+}
+.card-trending {
+    font-weight: normal !important;
+   font-size: 10px !important;
+}
+.card__headers {
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__headers h3 {
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: -20px;
+}
+.card__headers p {
+   font-weight: normal;
+   font-size: 10px;
+   margin-bottom: -20px;
+}
+
+
+.card__app {
+    display: flex;
+    justify-content: space-evenly;
+    height: 275px;
+    margin-top: -15px;
+    margin-left: 20px;
+}
+
+.card > div ~ div {
+    margin-top: 30px;
+}
+
+.card__footer {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.card__home {
+    padding: 10px 50px;
+    margin-top: -90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card__home span {
+    font-size: 50px;
+    color: #3A89F8;
+    margin-top: -20px;
+}
+
+.icon {
+    margin-left: 20px;
+}
+
+.card__home p {
+ margin-top: 20px;
+ color: #646464;
+ font-weight: normal;
+ font-size: 12px;
+ width: 90px;
+}
+
+.card__home h3 {
+    margin-top: 20px;
+    color: #3A89F8;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+.card__star {
+    padding: 10px 50px;
+    margin-top: -90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon-star {
+    margin-left: 20px;
+}
+
+.card__star span {
+    font-size: 50px;
+    color: #ffbe31f6;
+    margin-top: -20px;
+}
+.card__star p {
+ margin-top: 20px;
+ color: #646464;
+ font-weight: normal;
+ font-size: 12px;
+ width: 120px;
+}
+
+.card__star h3 {
+    margin-top: 20px;
+    color: #ffbe31f6;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+.card-head-name {
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.card__header h3 {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+.card__header5 h3 {
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+
+/* SEROM */
+
+.sermon-instruction {
+    margin-left: 160px;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+
+@media screen and (min-width: 1366px){
+    .sermon-instruction {
+    margin-left: 200px;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+
+}
+
+.sermon {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 590px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: auto auto;
+}
+
+.sermon img {
+    margin: 0 auto;
+    width: 400px;
+    height: 280px;
+} 
+
+.sermon i {
+    position: absolute;
+    top: 90px;
+    left: 230px;
+    font-size: 130px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.file {
+    display: flex;
+    margin: 0 50px;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-link {
+    margin-left: -25px;
+    margin-top: 20px;
+}
+
+.button-link .remove {
+    background-color: #FF0000;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.input-link {
+    margin: auto 0;
+    margin-left: 40px;
+}
+
+.input-link input {
+    width: 398px;
+    height: 40px;
+    border: 1px solid #C4C4C4;
+    padding: 12px 15px;
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.input-link input[type=text]:focus {
+  border: 3px solid rgb(5, 138, 226);
+  border-radius: 2px;
+}
+.input-link input[type=file]:focus {
+  border: none;
+}
+
+.input-link button {
+    width: 80px;
+    height: 40px;
+    margin-left: 25px;
+    background: #3A89F8;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.upload {
+    display: flex;
+    margin: 0 70px;
+    justify-content: space-between;
+}
+
+
+/* bulletin */
+
+
+.input-file {
+    margin: auto 0;
+    margin-left: 60px;
+}
+
+.input-file input {
+    width: 398px;
+    height: 45px;
+    padding: 12px 15px;
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.input-file p {
+    margin: 0 24px -12px 17px;
+}
+
+.image-upload {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -50px;
+}
+
+.file-upload {
+    margin: 70px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.file-upload button {
+    margin-top: 20px;
+    width: 80px;
+    height: 40px;
+    margin-left: 25px;
+    background: #3A89F8;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 1.5px;
+}
+
+.file-upload .remove {
+    background-color: #FF0000;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/* Giving */
+
+.upload-link {
+    display: flex;
+    margin: 0 70px;
+    justify-content: space-between;
+}
+
+.form-contents {
+    display: flex;
+    position: relative;
+}
+
+.form-contents .cancel{
+    width: 12px !important;
+    height: 12px !important;
+    position: absolute;
+    left: 445px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.form-contents img {
+    width: 55px !important;
+    height: 32px !important;
+    margin: 10px 0 0 -55px;
+}
+.form-contents .cashapp {
+    width: 36px !important;
+    height: 32px !important;
+    margin: 9px 0 0 -39px;
+}
+
+.form-contents .paypal {
+    width: 80px !important;
+    height: 32px !important;
+    margin: 9px 0 0 -78px;
+}
+
+.form-contents .pic {
+    margin: 9px 0 0 -52px;
+}
+
+.giving-link {
+    margin-top:-40px;
+    margin-left: 40px;
+}
+
+.giving-link form {
+    margin-top: 20px;
+}
+
+.giving-link p {
+    margin:    30px 0 -22px 15px;
+}
+
+.giving-link input {
+    width: 398px;
+    height: 32px;
+    border: 1px solid #C4C4C4;
+    padding: 12px 15px;
+    margin: 8px 0 8px 15px;
+    font-size: 16px;
+}
+.giving-link input[type=text]:focus {
+  border: 3px solid rgb(5, 138, 226);
+  border-radius: 2px;
+}
+
+
+.giving-button {
+    margin: 10px 0 10px 15px;
+}
+
+.giving-button button {
+    width: 80px;
+    height: 32px;
+    margin-left: 2px;
+    background: #3A89F8;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 2px;
+}
+
+.giving-button .remove {
+    background-color: #FF0000;
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.upload-link img {
+    width: 175px;
+    height: 305px;
+}
+
+/* Event */
+
+.upload-event {
+    display: flex;
+    margin: 0 70px;
+    justify-content: space-between;
+}
+
+.event-table {
+    display: flex;
+}
+
+.event-table Table {
+    width: 700px;
+    margin-right: 7px;
+}
+
+.event-table Table thead tr th{
+    background-color: #fff;
+    border-bottom: 1px solid #000000;
+    font-weight: 400;
+    font-size: 12px; 
+    width: 178px;
+}
+
+.event-table Table tbody tr:hover {
+    background-color: white !important;
+    color: black !important;
+}
+.event-table tbody tr td {
+    border-bottom: 1px solid #C4C4C4
+ !important;
+    font-weight: 400;
+    font-size: 8.4px; 
+    width: 200px;
+    border-width: 200px !;
+}
+
+
+.event-table TableContainer {
+    width: 550px;
+    border: 1px solid black;
+    margin-right: 1px;
+}
+
+.event-link {
+    margin: auto 0;
+    margin-left: 40px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.event-link p {
+    margin-top: 10px;
+}
+
+.event-link input {
+    width: 398px;
+    height: 32px;
+    border: 1px solid #C4C4C4;
+    padding: 12px 15px;
+    margin: 8px 0;
+    font-size: 16px;
+}
+.event-link input[type=text]:focus {
+  border: 3px solid rgb(5, 138, 226);
+  border-radius: 2px;
+}
+
+.upload-event img {
+    width: 175px;
+    height: 305px;
+}
+
+
+.event-file {
+    margin-top: 20px;
+}
+
+.event-file p {
+    margin-bottom: -18px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.event-file form {
+    margin-bottom: 10px;
+}
+
+.event-link .event-file .file-image {
+    border: none;
+    margin: 17px 0 0 -15px;
+    padding: 2px 15px !important;
+
+}
+
+.event-file form input[type=file]:focus {
+  border: none;
+}
+
+.event-button {
+    margin: 5px 0;
+}
+
+.event-button button {
+    width: 80px;
+    height: 32px;
+    margin-left: 2px;
+    background: #3A89F8;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 2px;
+}
+
+.event-button .remove {
+    background-color: #FF0000;
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/*  Event Modal  */ 
+
+.event-modal {
+    margin: auto 0;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.event-modal input {
+    width: 400px;
+    height: 32px;
+    border: 1px solid #C4C4C4;
+    padding: 12px 15px;
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.event-modal input[type=text]:focus {
+  border: 3px solid rgb(5, 138, 226);
+  border-radius: 2px;
+}
+
+.upload-event img {
+    width: 175px;
+    height: 305px;
+}
+
+
+.eventFile-modal {
+    margin-top: 20px;
+}
+
+.eventFile-modal p {
+    margin-bottom: -18px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.eventFile-modal form {
+    margin-bottom: 10px;
+}
+
+.event-modal .eventFile-modal .file-image {
+    border: none;
+    margin: 17px 0 0 -15px;
+    padding: 2px 15px !important;
+
+}
+
+.event-modal form input[type=file]:focus {
+  border: none;
+}
+
+
+/* NewMember */
+
+.upload-event {
+    display: flex;
+    margin: 0 70px;
+    justify-content: space-between;
+}
+
+
+.member-link {
+    margin: auto 0;
+    margin-left: 40px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.member-link input {
+    width: 398px;
+    height: 32px;
+    border: 1px solid #C4C4C4;
+    padding: 12px 15px;
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.member-link input[type=text]:focus {
+  border: 3px solid rgb(5, 138, 226);
+  border-radius: 2px;
+}
+
+
+.upload-event img {
+    width: 175px;
+    height: 305px;
+}
+
+
+.member-file {
+    margin-top: 10px;
+}
+
+.member-file p {
+    margin-bottom: -18px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.member-link .member-file .homecell-image {
+    border: none;
+    margin: 17px 0 0 -15px;
+    padding: 2px 15px !important;
+}
+
+.member-file form {
+    margin-bottom: 10px;
+}
+.member-link form .passage{
+    height: 50px;
+}
+.member-file input {
+    border: none;
+    margin-left: -15px;
+}
+
+.member-file form input[type=file]:focus {
+  border: none;
+}
+
+.member-button {
+    margin: 5px 0;
+}
+
+.member-button button {
+    width: 80px;
+    height: 32px;
+    margin-left: 2px;
+    background: #3A89F8;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 2px;
+}
+
+.member-button .remove {
+    background-color: #FF0000;
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/* About Us */
+
+.forms {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -45px;
+    
+}
+
+.about-link {
+    margin: -5px 0;
+    margin-left: 40px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.next-link {
+    margin-left: -0.5px !important;
+}
+
+.about-link input {
+    width: 350px;
+    height: 40px;
+    border: 1px solid #C4C4C4;
+    padding: 12px 15px;
+    margin: 8px 0;
+    font-size: 16px;
+}
+.about-link .input-message {
+    width: 350px;
+    height: 60px;
+    border: 1px solid #C4C4C4;
+    padding: 12px 15px;
+    margin: 8px 0;
+    font-size: 16px;
+}
+.about-link select {
+    width: 350px;
+    height: 40px;
+    border: 1px solid #C4C4C4;
+    padding: 12px 15px;
+    margin: 8px 0;
+}
+.about-link select option {
+    padding: 10px !important;
+}
+
+.about-link input[type=text]:focus {
+  border: 3px solid rgb(5, 138, 226);
+  border-radius: 2px;
+}
+
+.about-link .member-file .homecell-image {
+    border: none;
+    margin: 17px 0 0 -15px;
+    padding: 2px 15px !important;
+}
+
+
+/* Join */
+.form-contents .instagram {
+    width: 36px !important;
+    height: 32px !important;
+    margin: 9px 0 0 -39px;
+}
+.form-contents .youtube {
+     width: 36px !important;
+    height: 32px !important;
+    margin: 9px 0 0 -39px;
+}
+
+.form-contents .facebook {
+    width: 36px !important;
+    height: 32px !important;
+    margin: 9px 0 0 -39px;
+}
+.form-contents .zelle {
+    width: 40px !important;
+    height: 40px !important;
+    margin: 1px 0 0 -39px;
+}

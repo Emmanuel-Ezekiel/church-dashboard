@@ -1,0 +1,28 @@
+.series_event {
+    margin-left: 80px;
+    height: 200px;
+    position: relative;
+}
+
+.series_event img {
+    height: 194px;
+    margin-left: -35px;
+    
+}
+
+.second-image {
+    position: absolute;
+    top: 0;
+   left: 75px;
+
+}
+.third-image {
+    position: absolute;
+    top: 0;
+   left: 140px;
+}
+.fourth-image {
+    position: absolute;
+    top: 0;
+   left: 205px;
+}

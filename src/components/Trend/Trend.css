@@ -1,0 +1,40 @@
+.Trend-list{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-left: -25px;
+}
+
+.Trend-image {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.Trend-image h1 {
+    margin-left: 15px;
+}
+
+.Trend-list img {
+    height: 26px;
+    margin-top: -5px;
+    margin-left: -40px;
+}
+
+.Trend-list p {
+    font-weight: 500;
+    font-size: 10px;
+}
+
+
+
+.Trend-list h1 {
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.Trend-list i {
+    color: rgb(38, 132, 219);
+    font-size: 20px;
+    margin-top: -25px;
+}
+

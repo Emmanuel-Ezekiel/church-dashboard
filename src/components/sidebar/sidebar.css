@@ -1,0 +1,78 @@
+.sidebar {
+    width: 280px;
+    height: 900px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: var(--main-bg);
+    box-shadow: var(--box-shadow);
+}
+
+.sidebar__logo {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar__name {
+    display: inline;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.sidebar__line {
+    border: 1px solid #E5E5E5;
+    margin-bottom: 25px;
+}
+
+.sidebar__logo > img {
+    height: 80px;
+    margin-left: -60px;
+}
+.sidebar__logo > h1 {
+    height: 25px;
+}
+
+.sidebar__item {
+    width:100%;
+    text-align: center;
+    margin-left: 2px;
+    margin-top: -3.5px;
+
+}
+
+.sidebar__item-inner {
+    padding: 8.5px 40px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    transition: color 0.3s ease 0s;
+}
+
+.sidebar__item-inner > i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.sidebar__item-inner > span {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-style: normal;
+}
+
+.sidebar__item-inner:hover {
+    color: var(--main-color);
+}
+
+.sidebar__item-inner.active {
+    /* border-radius: var(--border-radius); */
+    background-image: linear-gradient(
+        to right,
+        var(--main-color),
+        var(--second-color)
+    );
+    color: var(--txt-white);
+}
